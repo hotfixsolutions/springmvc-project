@@ -1,0 +1,13 @@
+#mask{position:absolute;left:0;top:0;z-index:9000;background-color:#000;display:none;}
+#boxes .window{position:absolute;width:atuo;display:none;z-index:9999;padding:20px;box-shadow: 1px 1px 4px #000000;}
+#boxes #dialog{width:atuo;padding:10px 50px 5px 30px;background-color:#ffffff; border:14px solid #439AAD; }
+#boxes #dialog1{width:atuo;}
+#boxes #popup2{width:atuo;padding:10px 50px 5px 30px;background-color:#FFF; border:14px solid #439AAD; }
+#boxes #popup3{width:atuo;padding:10px 50px 5px 30px;background-color:#FFF; border:14px solid #439AAD; }
+
+#dialog1 .d-header{background:url(images/login-header.png) no-repeat 0 0 transparent;width:atuo;height:150px;}
+#dialog1 .d-header input{position:relative;top:60px;left:100px;border:3px solid #cccccc;width:atuo;font-size:15px;padding:5px;margin-top:4px;}
+#dialog1 .d-blank{float:left;background:url(images/login-blank.png) no-repeat 0 0 transparent;width:atuo;}
+#dialog1 .d-login{float:left;width:atuo;}
+#boxes #dialog2{background:url(images/notice.png) no-repeat 0 0 transparent;width:atuo;229px;padding:50px 0 20px 25px;}
+.close{ background:url(../images/close.png) 0 0 no-repeat; padding:5px 10px; position:absolute; right:0px; text-decoration:none; }

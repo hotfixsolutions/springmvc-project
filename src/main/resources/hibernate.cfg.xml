@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<mapping package="com.rp.entity" />
+
+		<mapping class="com.rp.entity.Request" />
+		<mapping class="com.rp.entity.State" />
+		<mapping class="com.rp.entity.Supplier" />
+		<mapping class="com.rp.entity.PurchaseOrder" />
+		<mapping class="com.rp.entity.PurchaseOrderDetails" />
+		<mapping class="com.rp.entity.CustomerTransaction" />
+		<mapping class="com.rp.entity.CustomerTransactionDetails" />
+		<mapping class="com.rp.entity.CustomerOutstanding" />
+	</session-factory>
+
+</hibernate-configuration>

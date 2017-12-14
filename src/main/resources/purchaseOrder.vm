@@ -1,0 +1,22 @@
+Dear ${contactPerson},<br>
+
+Please ship purchase order ${po.poPrefix}${po.poName} dated ${po.poDateString} with following details: <br><br>
+
+<table width="100%" border="1" cellspacing="5" cellpadding="5">
+<tr>
+	<th>Book Name</th>
+	<th>Author</th>
+	<th>Quantity</th>
+</tr>
+#foreach ($poDetail in $poDetails)
+<tr>
+<td>${poDetail.bookName}</td>
+<td>${poDetail.author}</td>
+<td>${poDetail.orderQuantity}</td>
+</tr>
+#end
+</table>
+<br>
+<br>
+Regards,
+<br><br>

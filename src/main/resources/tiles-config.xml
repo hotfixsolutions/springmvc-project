@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- 
+	The contents of this file are copyrighted by timeRAZOR, Inc. 
+	The contents of this file represents the real and intellectual property of timeRAZOR, 
+	Inc. Any source code, configuration parameters, documentation, 
+	data or database schema may not be copied, modified, 
+	reused or distributed without the written consent of timeRAZOR, Inc.
+ -->
+ 
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="adminBaseTemplate" id="adminBaseTemplate" template="/WEB-INF/templates/baseTemplate.jsp">
+        <put-attribute name="header" value="/WEB-INF/fragments/header/adminHeader.jsp"/>
+        <put-attribute name="content" value="${content}"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer/adminFooter.jsp" />
+    </definition>
+    
+    <definition name="adminLoginTemplate" id="adminLoginTemplate" template="/WEB-INF/templates/admin_portal_template.jsp">
+        <put-attribute name="header" value="/WEB-INF/fragments/header/admin_login_header.jsp"/>
+        <put-attribute name="content" value="${content}"/>
+        <put-attribute name="footer" value="/WEB-INF/fragments/footer/admin_login_footer.jsp" />
+    </definition>
+    
+    <!-- Home Page Mapping -->
+    <definition name="adminHome" id="adminHome" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/adminHome.jsp"/>
+        <put-attribute name="title" type="string" value="Hotfix" />
+    </definition>
+    
+
+    <!--  Mapping for Manage Request  -->
+    
+    <definition name="addRequestForm" id="addRequestForm" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/addRequest.jsp"/>
+        <put-attribute name="title" type="string" value="Add Request" />
+    </definition>
+    
+    <definition name="manageRequests" id="manageRequests" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/manageRequests.jsp"/>
+        <put-attribute name="title" type="string" value="List Request" />
+    </definition>
+
+    <definition name="viewRequestDetail" id="viewRequestDetail" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/viewRequestDetail.jsp"/>
+        <put-attribute name="title" type="string" value="View Request Details" />
+    </definition>
+    
+    <definition name="editRequestForm" id="editRequestForm" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/editRequest.jsp"/>
+        <put-attribute name="title" type="string" value="Edit Request" />
+    </definition>    
+    
+    <definition name="manageTableRequests" id="manageTableRequests" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/dataTableRequestView.jsp"/>
+        <put-attribute name="title" type="string" value="Manage Request" />
+    </definition>    
+    <!--  Mapping for Manage Supplier -->
+
+    <definition name="manageSuppliers" id="manageSuppliers" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/manageSuppliers.jsp"/>
+        <put-attribute name="title" type="string" value="List Suppliers" />
+    </definition>
+
+    <definition name="addSupplierForm" id="addSupplierForm" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/addSupplier.jsp"/>
+        <put-attribute name="title" type="string" value="Add New Supplier" />
+    </definition>
+    
+    <definition name="viewSupplierDetail" id="viewSupplierDetail" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/viewSupplierDetails.jsp"/>
+        <put-attribute name="title" type="string" value="View Supplier Details" />
+    </definition>
+
+     <definition name="editSupplierForm" id="editSupplierForm" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/editSupplier.jsp"/>
+        <put-attribute name="title" type="string" value="Edit Supplier" />
+    </definition>
+    <definition name="supplierList" id="supplierList" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/dtViewSupplier.jsp"/>
+        <put-attribute name="title" type="string" value="Manage Suppliers" />
+    </definition>    
+    
+    <!--  Mapping for Manage PO-->
+    <definition name="managePO" id="managePO" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/po/managePO.jsp"/>
+        <put-attribute name="title" type="string" value="List Purchase Orders" />
+    </definition>
+    <definition name="addPO" id="addPO" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/po/addPO.jsp"/>
+        <put-attribute name="title" type="string" value="Add Purchase Order" />
+    </definition>
+    <definition name="editPO" id="editPO" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/po/editPO.jsp"/>
+        <put-attribute name="title" type="string" value="Edit Purchase Order" />
+    </definition>
+    
+    <!--  Mapping for Transaction -->
+    <definition name="manageTransaction" id="manageTransaction" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/transaction/manageTransaction.jsp"/>
+        <put-attribute name="title" type="string" value="List Transactions" />
+    </definition>
+    <definition name="addTransaction" id="addTransaction" extends="adminBaseTemplate">
+        <put-attribute name="content" value="/WEB-INF/fragments/content/transaction/addTransaction.jsp"/>
+        <put-attribute name="title" type="string" value="Add Transaction" />
+    </definition>    
+</tiles-definitions>
+    
